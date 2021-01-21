@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cbfea4394f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon.png">
+    <title>Pomodoro -App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-5 title">My pomodoro</h1>
+      <!-- Main Timer -->
+      <div class="container timer">
+
+        <div class="row">
+
+          <div class="col">
+            <h4 id="minutes"></h4>
+          </div>
+
+          <div class="col">
+            <h4>:</h4>
+          </div>
+
+          <div class="col">
+            <h4 id="seconds"></h4>
+          </div>
+        </div>
+      </div>
+      <!-- --- -->
+
+      <!-- Controls -->
+      <div class="container controls">
+        <button class="btn" onclick="start()" ><i class="fas fa-play-circle"></i></button>
+      </div>
+      <!-- Finished Message -->
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
