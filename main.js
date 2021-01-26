@@ -3,9 +3,10 @@ var session_seconds = "00";
 var session_minutes = 30;
 
 // Starting template for the timer
-function template() {
-  document.getElementById("minutes").innerHTML = session_minutes;
-  document.getElementById("seconds").innerHTML = session_seconds;
+function SetTimer() {
+  // Change the minutes and seconds to starting time
+  session_minutes = document.getElementById("duration").value -1;
+  session_seconds = 59;
 }
 
 // Audio files
@@ -13,11 +14,10 @@ var click_sound = new Audio("click.mp3");
 var bell = new Audio("bell.mp3");
 
 let start =()=>{
+  SetTimer();
   click_sound.play();
   document.getElementById("done").innerHTML ="";
-  // Change the minutes and seconds to starting time
-  session_minutes = 29;
-  session_seconds = 59;
+
 
   // Add the seconds and minutes to the page
   document.getElementById("minutes").innerHTML = session_minutes;

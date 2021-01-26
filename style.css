@@ -46,3 +46,16 @@ body{
   border: 3px solid #f29202;
   transition: 0.3s ease;
 }
+
+.container{
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+input{
+  outline: none;
+}
+input:focus{
+  background-color: #7fbf7f;
+  border: 3px solid #f29202;
+}
